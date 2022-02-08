@@ -1,8 +1,8 @@
 /* (A) STANDARD ROW HEIGHT */
 .vwrap, .vitem {
-    height: 500px;
+    height: 1000px;
     width:300px;
-    line-height: 20px;
+    line-height: 10px;
   }
    
   /* (B) FIXED WRAPPER */
@@ -18,14 +18,20 @@
   .vmove { position: relative; }
   @keyframes tickerv {
     0% { bottom: 0; } /* FIRST ITEM */
-    30% { bottom: 30px; } /* SECOND ITEM */
-    60% { bottom: 60px; } /* THIRD ITEM */
-    90% { bottom: 90px; } /* FORTH ITEM */
-    100% { bottom: 0; } /* BACK TO FIRST */
+    10% { bottom: 50px; } /* SECOND ITEM */
+    20% { bottom: 100px; } /* THIRD ITEM */
+    30% { bottom: 150x; } /* FORTH ITEM */
+    40% { bottom: 200px; } /* FIFTH ITEM */
+    50% { bottom: 250px; } /* SIXTH ITEM */
+    60% { bottom: 300px; } /* SEVENTH ITEM */
+    70% { bottom: 350px; } /* EIGHTH ITEM */
+    80% { bottom: 400x; } /* NINTH ITEM */
+    90% { bottom: 450px; } /* TENTH ITEM */
+    100% { bottom: 500px; } /* BACK TO FIRST */
   }
   .vmove {
     animation-name: tickerv;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1, 0, .5, 0);
   }
